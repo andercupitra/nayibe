@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url('fondo-dia-astronomia-impresionante-cielo-estrellado_837031-1.avif');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.moon {
+    position: fixed;
+    top: 40%;
+    left: -150px;
+    width: 80px;
+    height: 80px;
+    background-color: #f0e68c;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: transform 5s ease-in-out, opacity 2s ease-in-out;
+}
+
+.messages h1 {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+.video-container {
+    margin: 20px 0;
+}
+
+video {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
